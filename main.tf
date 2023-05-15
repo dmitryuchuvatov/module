@@ -1,3 +1,21 @@
+terraform {
+  required_providers {
+    null = {
+      source = "hashicorp/null"
+      version = "3.2.1"
+    }
+  }
+}
+
+provider "null" {
+}
+
+resource "random_string" "test" {
+  length           = 16
+  special          = true
+  override_special = "/@£$"
+}
+
 output "test" {
-    value = "Hello, World!"
+  value = random_string.test.id
 }
