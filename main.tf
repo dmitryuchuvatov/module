@@ -1,3 +1,3 @@
-module "mymodule" {
-  source = "github.com/dmitryuchuvatov/module"
+output "test" {
+    value = "Hello, World!"
 }
