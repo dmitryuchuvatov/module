@@ -7,12 +7,6 @@ terraform {
   }
 }
 
-resource "random_string" "test" {
-  length           = 16
-  special          = true
-  override_special = "/@£$"
-}
+provider "null" {}
 
-output "test" {
-  value = random_string.test.id
-}
+resource "null_resource" "null" {}
