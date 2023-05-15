@@ -1,6 +1,6 @@
 # Sample repo that can be used as Module
 
-More unformation about modules is [here](https://www.terraform.io/docs/language/modules/sources.html)
+More information about modules is [here](https://www.terraform.io/docs/language/modules/sources.html)
 
 
 # Prerequisites
